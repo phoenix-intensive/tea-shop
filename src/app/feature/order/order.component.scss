@@ -1,0 +1,23 @@
+.container {
+  max-width: 960px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+
+input.ng-invalid.ng-dirty,
+input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+
+.full-height {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

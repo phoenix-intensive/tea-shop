@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid red; для того чтобы понять какой блок выходит за пределы на адаптиве, из-за которого
+  появляется скролл по горизонтали*/
+}
+
+@font-face {
+  font-family: Arial;
+  src: url("./assets/fonts/Arial.ttf");
+}
+
+@font-face {
+  font-family: ArialBold;
+  src: url("./assets/fonts/Arial Bold.ttf");
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  width: 110px;
+  height: 36px;
+}
+
+.btn-card {
+  width: 200px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+
+.btn-outline-success {
+  border-color: #007BFF;
+}
+
+.btn-outline-success:hover {
+  background: #007BFF;
+}
+
+.button-action {
+  display: flex;
+  align-items: center;
+}
+
+
+.container-fluid span {
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 16px;
+}
+
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.33);
+}
+
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #007BFF;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,24 @@
+<div class="container">
+<section class="card-products">
+  <h1>Наши чайные коллекции</h1>
+  <div class="products">
+    <div class="card" *ngFor="let product of products" style="width: 416px;">
+      <div class="col">
+        <a class="product-item-image" href="{{product.image}}">
+          <img src="{{product.image}}" class="card-img-top" alt="Картинка чая">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">{{product.title}}</h5>
+          <p class="card-text">{{product.description | truncateText: 100}}</p>
+          <h5 class="card-price">Цена: {{product.price}} руб.</h5>
+          <a class="btn btn-primary" [routerLink]="['/products', product.id]">Подробнее</a>
+        </div>
+      </div>
+    </div>
+<!--    <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>-->
+  </div>
+  <div *ngIf="loading" class="loader-bg">
+    <div class="loader"></div>
+  </div>
+</section>
+</div>

@@ -1,0 +1,25 @@
+<div class="title">
+<h3>{{ title }}</h3>
+<div *ngIf="products.length > 0" class="products">
+  <h2>Описание чая</h2>
+  <div class="card" style="width: 700px" *ngFor="let product of products">
+    <div class="col">
+      <a class="product-item-image" [href]="product.image">
+        <img [src]="product.image" class="card-img-top" alt="Картинка чая">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <h5 class="card-price">Цена: {{product.price}} руб.</h5>
+        <div class="button-action">
+          <a class="btn btn-card btn-primary" [routerLink]="['/order']" [queryParams]="{ product: product.title }">Оформить заказ</a>
+          <a class="btn btn-primary" [routerLink]="['/products']">В каталог</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div *ngIf="loading" class="loader-bg">
+    <div class="loader"></div>
+  </div>
+</div>

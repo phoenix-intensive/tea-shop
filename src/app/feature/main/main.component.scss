@@ -1,0 +1,92 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  padding: 72px 0;
+}
+
+.questions h1 {
+  color: #000;
+  text-align: center;
+  font-family: ArialBold, sans-serif;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.questions-accordion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion {
+  width: 856px;
+  margin-bottom: 72px;
+}
+
+
+::ng-deep .accordion-item {
+  border: none;
+}
+
+
+::ng-deep .accordion-item .accordion-button {
+  border-radius: 10px;
+  background: linear-gradient(0deg, #076BFF 0%, #007BFF 100%);
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 16px;
+}
+
+
+::ng-deep .accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+::ng-deep .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+::ng-deep .accordion-button::after {
+  content: url("../../../assets/image/next3.png");
+}
+
+
+.popup-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  width: 500px; /* Задайте нужную ширину */
+  height: 220px; /* Задайте нужную высоту */
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+.modal-footer {
+  margin-bottom: 20px;
+  padding: 0;
+}

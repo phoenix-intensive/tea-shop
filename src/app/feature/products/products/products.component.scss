@@ -1,0 +1,40 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px
+}
+
+.card-products {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+
+.card-products h1 {
+  text-align: center;
+  margin-bottom: 51px;
+  font-family: ArialBold, sans-serif;
+}
+
+.card {
+  padding: 0;
+}
+
+
+.card-title {
+  color: #000;
+  font-family: ArialBold, sans-serif;
+  font-size: 20px;
+}
+
+.card-text {
+  color: #000;
+  font-size: 16px;
+}
+
+
+h5 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}

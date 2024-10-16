@@ -1,0 +1,64 @@
+<div class="container">
+<section class="main">
+  <div class="slider">
+    <div>
+      <img src="assets/image/chay-s-apelsinom-sayt-2%201.png" alt="Картинка1">
+    </div>
+  </div>
+</section>
+
+  <section class="questions">
+    <h1>Ответы на часто задаваемые вопросы</h1>
+    <div class="questions-accordion">
+      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel title="Собираете ли вы подарочные боксы?">
+          <ng-template ngbPanelContent>
+            Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+          </ng-template>
+        </ngb-panel>
+
+        <ngb-panel title="Сколько у вас разновидностей чая?">
+          <ng-template ngbPanelContent>
+            Более 500 видов сорта
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel title="В какой срок осуществляется доставка?">
+          <ng-template ngbPanelContent>
+            В зависимости от региона доставки
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel title="У вас обновляется ассортимент?">
+          <ng-template ngbPanelContent>
+            Ассортимент обновляется часто, мы постоянно следим и работаем над расширением магазина
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Какого объема у вас пачки чая?">
+          <ng-template ngbPanelContent>
+            500 грамм
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+    </div>
+  </section>
+</div>
+
+<div class="popup-container" *ngIf="showPopup">
+<div class="modal modal-sheet position-static d-flex align-items-center justify-content-center" tabindex="-1" role="dialog" id="modalSheet">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="btn-close" (click)="hidePopup()" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-header border-bottom-0 d-flex justify-content-center">
+        <h1 class="modal-title fs-5">Рады Вас видеть!</h1>
+      </div>
+      <div class="modal-body py-0">
+        <p>Посмотрите наши чайные коллекции</p>
+      </div>
+      <div class="modal-footer flex-column align-items-center w-100 pb-0 border-top-0">
+        <button type="button" class="btn btn-primary" [routerLink]="'/products'">Смотреть</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

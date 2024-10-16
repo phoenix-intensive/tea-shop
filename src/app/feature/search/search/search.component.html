@@ -1,0 +1,5 @@
+<form class="d-flex" role="search">
+  <input class="form-control me-2" name="search" [(ngModel)]="searchQuery" placeholder="Поиск чая" aria-label="Search" >
+  <button class="btn btn-primary" (click)="onSearch()">Найти</button>
+  <button class="btn btn-secondary ms-2" (click)="onClear()">Сброс</button>
+</form>
